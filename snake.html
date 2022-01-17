@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="snake.css">
+    <title>Snake</title>
+</head>
+<body onkeypress="handleKeyPress(event.code)">
+    <div id="board-container">
+        <div id="board">
+            <!-- <div class="green block"></div> -->
+        </div>
+        <div id="status-message-box">
+            <div id="status-message"></div>
+        </div>
+    </div>
+    <button onclick="startGame()">Start Game</button>
+    <div>Time: <span id="time">0</span></div>
+    <div>Score: <span id="score">0</span></div>
+    <div>Direction: <span id="direction">DOWN</span></div>
+    <div>
+        <b>Controls</b>
+        <ul>
+            <li><b>W: </b> Up</li>
+            <li><b>A: </b> Left</li>
+            <li><b>S: </b> Down</li>
+            <li><b>D: </b> Right</li>
+            <li><b>P: </b> Pause</li>
+            <li><b>U: </b> Unpause</li>
+        </ul>
+    </div>
+    <!-- <button onclick="advanceToNextFrame()">Next Frame</button>
+    <button onclick="setSnakeVelocity(UnitVector.UP)">Up</button>
+    <button onclick="setSnakeVelocity(UnitVector.DOWN)">Down</button>
+    <button onclick="setSnakeVelocity(UnitVector.LEFT)">Left</button>
+    <button onclick="setSnakeVelocity(UnitVector.RIGHT)">Right</button> -->
+    <script src="snake.js"></script>
+</body>
+</html>

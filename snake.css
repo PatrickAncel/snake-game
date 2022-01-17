@@ -1,0 +1,46 @@
+#board-container {
+    width: 100vw;
+    justify-content: center;
+    display: grid;
+    position: fixed;
+}
+
+#board {
+    width: 90vh;
+    height: 90vh;
+    background-color: black;
+    border: 3px solid black;
+    position: fixed;
+    transform: translate(calc(50vw - 45vh), calc(50vh - 45vh));
+}
+
+#status-message-box {
+    width: 40vh;
+    height: 5vh;
+    position: fixed;
+    transform: translate(calc(50vw - 20vh), calc(50vh - 2.5vh));
+    justify-content: center;
+}
+
+#status-message {
+    text-align: center;
+    font-size: 5vh;
+    font-family: monospace;
+}
+
+.block {
+    width: 1vh;
+    height: 1vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.green {
+    background-color: rgb(58, 116, 58);
+}
+
+.red {
+    background-color: red;
+}
+
